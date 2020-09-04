@@ -7,5 +7,5 @@ Etapas:
 - Desenvolvido controller GithubApiController que executa a chamada através do Client Guzzle (Laravel)
 - Desenvolvida view para buscar e exibir dados do usuário informado. 
 
-![Imagem 1](https://github.com/jonasdiel/apiGithub/blob/master/public/image1.png 458)
-![Imagem 2](https://github.com/jonasdiel/apiGithub/blob/master/public/image2.png 458)
+![Imagem 1](https://github.com/jonasdiel/apiGithub/blob/master/public/image1.png)
+![Imagem 2](https://github.com/jonasdiel/apiGithub/blob/master/public/image2.png)
