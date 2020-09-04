@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Etapa 2</title>
+</head>
+<body>
+<div id="divResposta"></div>
+<script type="text/javascript">
+    var body = JSON.stringify({"token":"7e8230ae820bd5f3d4f022489415dbb1","usuario":"2143","senha":"123456"});
+    var requestOptions = {
+        method: 'POST',
+        body: body
+    };
+
+    fetch("https://apiweb-enwzofr76a-uc.a.run.app/api/login", requestOptions)
+        .then((res) => {
+            var element = document.getElementById("divResposta");
+            var node = document.createTextNode(res.json());
+            element.appendChild(node);
+        })
+        .then((response) => {
+            var element = document.getElementById("divResposta");
+            var node = document.createTextNode(response);
+            console.log(response);
+            element.appendChild(node);
+        })
+</script>
+</body>
+</html>
