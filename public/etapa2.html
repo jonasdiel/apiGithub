@@ -8,6 +8,7 @@
     var body = JSON.stringify({"token":"7e8230ae820bd5f3d4f022489415dbb1","usuario":"2143","senha":"123456"});
     var requestOptions = {
         method: 'POST',
+        mode: 'no-cors',
         headers: {'Content-type': 'application/json'},
         body: body
     };
@@ -15,13 +16,7 @@
     fetch("https://apiweb-enwzofr76a-uc.a.run.app/api/login", requestOptions)
         .then((res) => {
             var element = document.getElementById("divResposta");
-            var node = document.createTextNode(res.json());
-            element.appendChild(node);
-        })
-        .then((response) => {
-            var element = document.getElementById("divResposta");
-            var node = document.createTextNode(response);
-            console.log(response);
+            var node = document.createTextNode(res);
             element.appendChild(node);
         })
 </script>
